@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+</head>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        /* list-style: none; */
+        text-decoration: none;
+    }
+    .wrapper{
+        width:100%;
+        height:100%;
+    }
+    /* top */
+    .top{
+        width:100%;
+        height:300px;
+        border-bottom:5px solid skyblue;
+    }
+    .top::after{
+        display: block;
+        content: "";
+        clear:both;
+    }
+    .t-left{
+        float:left;
+        width:800px;
+        height:100%;
+        text-align: center;
+
+    }
+    .t-right{
+        float:none;
+        width:100%;
+        height:100%;
+    }
+    .t-right img{
+        height:180px;
+        width:150px;
+        margin:70px 150px 0 150px;
+    }
+    /* bottom */
+    .bottom{
+        width:100%;
+        /* height:400px; */
+        background-color:#E1FFFF ;
+    }
+    .bottom::after{
+        display: block;
+        content: "";
+        clear:both;
+    }
+     /* bottom-left */
+    .bottom .b-left{
+        height:100%;
+        /* width:700px; */
+        width:50%;
+        float:left;
+        /* border:1px solid red; */
+    }
+    .bottom .b-left .b-left-head{
+        margin:30px 0 0 100px;
+        border-bottom: 2px solid #ccc;
+    }
+    .bottom .b-left .b-left-head .knowledge,
+    .bottom .b-right .b-right-head .skill,
+    .bottom .b-bottom .b-bottom-head span{
+        display:inline-block;
+        font-size:30px;
+        font-weight:bold;
+        color:#708090;
+        font-family:Georgia;
+        position: relative;
+        top:-12px;
+        left:10px;  
+    }
+    .bottom .b-left .b-left-content{
+        margin:20px 0 0 100px;
+        font-size:20px;
+        color:#708090;
+        font-family:Georgia;
+        line-height: 30px;
+    }
+     /* bottom-right */
+    .bottom .b-right{
+        height:100%;
+        width:50%;
+        float:right;
+    }
+    .bottom .b-right .b-right-head{
+        margin:30px 0 0 20px;
+        border-bottom: 2px solid #ccc;
+    }
+    .bottom .b-right .b-right-content{
+        margin:20px 0 0 20px;
+    }
+    .bottom .b-right .b-right-content .myskill{
+        width:100%;
+        margin-bottom:15px;
+    }
+    .skill-1{
+        width:100%;
+        background: linear-gradient(90deg, #00BFFF  90%,   #ccc 50%);
+    }
+    .skill-2{
+        width:100%;
+        background: linear-gradient(90deg, #00BFFF  75%,   #ccc 50%);
+    }
+    .skill-3{
+        width:100%;
+        background: linear-gradient(90deg, #00BFFF  85%,   #ccc 50%);
+    }
+    .skill-4{
+        width:100%;
+        background: linear-gradient(90deg, #00BFFF  65%,   #ccc 50%);
+    }
+    .skill-5{
+        width:100%;
+        background: linear-gradient(90deg, #00BFFF  55%,   #ccc 50%);
+    }
+    .bottom .b-right .b-right-content .myskill span{
+        display:inline-block;
+        font-size:30px;
+        font-weight:bold;
+        color:#708090;
+        font-family:Georgia;
+    }
+     /* b-bottom */
+     .bottom .b-bottom{
+        float:left;
+        width:100%;
+        /* margin:30px 0 0 80px; */
+     }
+     .bottom .b-bottom .b-bottom-head{
+         /* margin-bottom:10px; */
+         margin:20px 0 0 80px; 
+        border-bottom: 2px solid #ccc;
+     }
+     .bottom .b-bottom .b-bottom-timeAndName{
+        margin:20px 0 0 80px; 
+     }
+     .bottom .b-bottom .b-bottom-timeAndName .time{
+         display: inline-block;
+         width:400px;
+        font-size:20px;
+        font-weight:bold;
+        color:#708090;
+        font-family:Georgia;
+     }
+      .bottom .b-bottom .b-bottom-timeAndName .PojectName{
+        font-size:20px;
+        font-weight:bold;
+        color:#708090;
+        font-family:Georgia;
+      }
+      .bottom .b-bottom .b-bottom-description{
+        /* margin: 10px 0 0 0; */
+        margin:20px 0 0 80px; 
+      }
+      .bottom .b-bottom .b-bottom-description .description-head{
+        font-size:20px;
+        font-weight:bold;
+        color:#708090;
+        font-family:Georgia;
+      }
+      .bottom .b-bottom .b-bottom-description .description-content{
+        font-size:19px;
+        color:#708090;
+        font-family:Georgia;
+      }
+      .bottom .b-bottom .duty{
+        margin:20px 0 0 80px; 
+        /* margin:10px 0 0 0; */
+      }
+      .bottom .b-bottom .duty .duty1 {
+        font-size:20px;
+        font-weight:bold;
+        color:#708090;
+        font-family:Georgia;
+      }
+      .bottom .b-bottom .duty .duty2{
+        margin:5px 0 0 0;
+        font-size:19px;
+        color:#708090;
+        font-family:Georgia;
+      }
+</style>
+
+<body>
+    <div class="wrapper">
+        <div class="top">
+                <div class="t-left">
+                    <p class="Name" style="font-size:35px; font-weight: bold;font-family:Georgia;margin-top:120px;">Yancy Guo</p>
+                    <p style="font-size:35px; font-weight: bold;font-family:Georgia;color:#708090">Zhuhai College of Jilin University</p>
+                    <p class="" style="font-size:35px; font-weight:bold;color:#708090;font-family:Georgia;">computer science and Technology</p>
+                </div>
+                <div class="t-right">
+                    <img src="guozhaoyuan.jpg" alt="Yancy Guo"/>
+                </div>
+        </div>
+         <div class="bottom">
+            <div class="b-left">
+                <div class="b-left-head">
+                    <img src="111.jpg" alt="小图标" style="width:50px;height:50px;">
+                    <span class="knowledge">My knowledge</span>
+                </div>
+                <div class="b-left-content">
+                    <ol type="I">
+                        <li><span>Master HTML, CSS, familiar with the characteristics of common tags.</span></li>
+                        <li><span>Understand the usage scenarios of ajax, used ajax of jquery.</span></li>
+                        <li><span>Understand and use native js, understand the closure problem, will use dom operation.</span></li>
+                        <li><span>Understand the es6 grammatical characteristics.</span></li>
+                        <li><span>Familiar with the basic knowledge of vue.</span></li>
+                        <li><span>Build a vue-cli4 environment, and develop projects with vue-router, vuex, and axios.</span></li>
+                    </ol>
+                </div>
+            </div>
+            <div class="b-right">
+                <div class="b-right-head">
+                    <img src="111.jpg" alt="小图标" style="width:50px;height:50px;">
+                    <span class="skill">Skill proficiency</span>
+                </div>
+                <div class="b-right-content">
+                        <div class="myskill"> <span class="skill-1">HTML+CSS</span> </div>
+                        <div class="myskill"> <span class="skill-2">Javascript</span> </div>
+                        <div class="myskill"> <span class="skill-3">Vue</span></div>
+                        <div class="myskill"> <span class="skill-4">Java</span> </div>
+                        <div class="myskill"> <span class="skill-5"> DateBase</span></div>
+                </div>
+            </div>
+             <div class="b-bottom">
+                <div class="b-bottom-head">
+                    <img src="111.jpg" alt="小图标" style="width:50px;height:50px;">
+                    <span >Project experience</span>
+                </div>
+                <div class="b-bottom-timeAndName">
+                    <span class="time">2020.02-present</span>
+                    <span class="PojectName">Virtual mall cosmetics sales system</span>
+                </div>
+                <div class="b-bottom-description">
+                    <div class="description">
+                        <span class="description-head">project description:</span>
+                        <span class="description-content">
+                            Set up a senior year project. Main functions: users can search for cosmetics, buy cosmetics, add them to the shopping cart, and provide after-sales functions. Users can evaluate products and provide returns. The administrator mainly monitors the user account information, can manipulate the user account and can manage the after-sales problems of the goods.
+                        </span>
+                    </div>
+                </div>
+                <div class="duty">
+                    <p class="duty1">duty description:</p>
+                    <div class="duty2">
+                        <ol type="I">
+                            <li>The front-end technology stack of the project is vue+vue-router+vuex+axios, the back-end framework adopts springboot framework, the database is mysql.</li>
+                            <li>The front-end and back-end development are separated, front-end software vscode, back-end software Idea.</li>
+                            <li>Adopting the concept of component development, the mall interface adopts the div+css native layout.</li>
+                            <li>Front-end and back-end data interaction adopts axios to obtain back-end data through interface.</li>
+                            <li> Backend mainly uses springboot built-in JPA to manipulate the database.</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
